@@ -22,7 +22,7 @@ class EntryCreateForm(Form):
         filters=[strip_filter]
     )
 
-class EditForm(Form):
+class EditForm(EntryCreateForm):
     id = HiddenField()
 
 class LoginForm(Form):
